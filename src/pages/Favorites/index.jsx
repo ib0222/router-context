@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CardContext } from '../../context/CardContext'
 
 const Favorites = () => {
+  const {favorites,setFavorites} = useContext(CardContext)
   return (
-    <div>Favorites</div>
+    <div>
+      {favorites}
+
+    </div>
   )
 }
 
