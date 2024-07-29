@@ -15,8 +15,8 @@ const Card = ({ id, image, title, price }) => {
   }
 
   return (
-    <div className="relative border p-3 rounded-xl bg-slate-300 hover:bg-slate-500 ease-in-out duration-300 flex flex-col min-h-[400px]">
-      <div className="flex-1 flex justify-center items-center h-1/2">
+    <div className="relative border p-3 rounded-xl bg-slate-300 hover:bg-slate-500 ease-in-out duration-300 flex flex-col h-[300px]">
+      <div className="flex-1 flex justify-center items-center h-1/2 mt-8">
         <img
           src={image}
           alt={title}
@@ -24,7 +24,7 @@ const Card = ({ id, image, title, price }) => {
         />
       </div>
       <div className="flex-1 text-center font-bold flex flex-col justify-center items-center h-1/2">
-        <h3 className="text-lg font-semibold tracking-wide text-slate-800 line-clamp-2">
+        <h3 className="text-lg font-semibold tracking-wide text-slate-800 line-clamp-1">
           {title}
         </h3>
         <p className="text-lg mt-2 text-slate-700">{price} $</p>
